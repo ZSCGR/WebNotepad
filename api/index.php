@@ -12,15 +12,6 @@ header('Cache-Control: no-store');
 // 直接定义禁止的后缀名
 $prohibited_suffixes = ["text", "tg", "py"];
 
-function is_prohibited_suffix($filename) {
-    global $prohibited_suffixes;
-    foreach ($prohibited_suffixes as $suffix) {
-        if (substr($filename, -strlen($suffix)) === $suffix) {
-            return true;
-        }
-    }
-    return false;
-}
 
 // API 处理逻辑
 // 1. 新建随机地址文本，/?new&text=xxxx，返回新建文本的URL
