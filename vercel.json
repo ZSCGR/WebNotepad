@@ -5,6 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" }
+    { "src": "/(.*)",  "dest": "/api/index.php" },
+    { "src": "/([a-zA-Z0-9_-]+)", "dest": "/index.php?note=$1"},
   ]
 }
