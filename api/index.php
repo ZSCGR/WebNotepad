@@ -194,8 +194,8 @@ $note_name_escaped = htmlspecialchars($sanitized_note_name, ENT_QUOTES, 'UTF-8')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $note_name_escaped; ?></title>
-    <link rel="icon" href="./img/ico.png" sizes="any">
-    <link rel="icon" href="./img/ico.png" type="image/svg+xml">
+    <link rel="icon" href="https://fastly.jsdelivr.net/gh/ZSCGR/WebNotepad@latest/img/ico.png" sizes="any">
+    <link rel="icon" href="https://fastly.jsdelivr.net/gh/ZSCGR/WebNotepad@latest/img/ico.png" type="image/svg+xml">
     <style>
         body {
             margin: 0;
@@ -236,7 +236,7 @@ $note_name_escaped = htmlspecialchars($sanitized_note_name, ENT_QUOTES, 'UTF-8')
             background: #f5f4f1;
             border: 2px solid #000000;
             color: #000000;
-            background-image: url('./img/Yande.re 629088.png'); 
+            background-image: url('https://fastly.jsdelivr.net/gh/ZSCGR/WebNotepad@latest/img/Yande.re%20629088.png'); 
             background-size: 260px;
             background-repeat: no-repeat;
             background-position: right bottom;
@@ -606,7 +606,7 @@ $note_name_escaped = htmlspecialchars($sanitized_note_name, ENT_QUOTES, 'UTF-8')
         width: 0;
         }
         .my-textarea {
-            background-image: url('./img/yande.re 926273.webp'); 
+            background-image: url('https://fastly.jsdelivr.net/gh/ZSCGR/WebNotepad@latest/img/yande.re%20926273.webp'); 
             background-size: 260px;
             background-repeat: no-repeat;
             background-position: right bottom;
