@@ -1,7 +1,7 @@
 <?php
 
 // 设置笔记保存的目录路径，建议使用绝对路径，并确保该路径位于文档根目录之外以提高安全性。
-$notes_directory = __DIR__ . '/_tmp';
+$notes_directory = __DIR__ . '/tmp';
 
 // 获取保存笔记的真实路径
 $absolute_notes_directory = realpath($notes_directory);
