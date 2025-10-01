@@ -5,7 +5,12 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" },
-    { "src": "/([a-zA-Z0-9_-]+)", "dest": "/api/index.php?note=$1"}
+    { "src": "/(.*)",  "dest": "/api/index.php" }
+  ],
+  "rewrites": [
+    {
+      "source": "/:note([a-zA-Z0-9_-]+)",
+      "destination": "/index.php?note=:note"
+    }
   ]
 }
