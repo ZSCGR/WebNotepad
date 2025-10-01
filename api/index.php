@@ -1,7 +1,7 @@
 <?php
 
 // 设置笔记保存的目录路径，建议使用绝对路径，并确保该路径位于文档根目录之外以提高安全性。
-$notes_directory = __DIR__ . '/_tmp';
+$notes_directory = '/tmp';
 
 // 获取保存笔记的真实路径
 $absolute_notes_directory = realpath($notes_directory);
@@ -15,7 +15,7 @@ if (!$absolute_notes_directory || !is_dir($absolute_notes_directory)) {
 header('Cache-Control: no-store');
 
 // 加载禁止的后缀
-$prohibited_suffixes = json_decode(file_get_contents(__DIR__ . '/prohibited_suffixes.json'), true)['prohibited_suffixes'];
+$prohibited_suffixes = json_decode(file_get_contents('/tmp/prohibited_suffixes.json'), true)['prohibited_suffixes'];
 
 // 检查文件名后缀
 function is_prohibited_suffix($filename) {
