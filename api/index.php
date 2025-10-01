@@ -15,7 +15,7 @@ if (!$absolute_notes_directory || !is_dir($absolute_notes_directory)) {
 header('Cache-Control: no-store');
 
 // 加载禁止的后缀
-$prohibited_suffixes = json_decode(file_get_contents('/tmp/prohibited_suffixes.json'), true)['prohibited_suffixes'];
+$prohibited_suffixes = json_decode(file_get_contents('./prohibited_suffixes.json'), true)['prohibited_suffixes'];
 
 // 检查文件名后缀
 function is_prohibited_suffix($filename) {
